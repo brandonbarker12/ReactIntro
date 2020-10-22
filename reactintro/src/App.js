@@ -3,12 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 import TaskList from './TaskList';
 
-function App() {    
+function App() {
   return (
     <div className="App">
-        <h1>To-Do List</h1>
-        <input> </input>
-        <button>Add Todo</button>   
+        <h1>To-do List</h1>
+        <input></input>
+        <button>Add Todo</button>
+        <TaskList />
         <TaskList />
     </div>
   );

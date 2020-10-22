@@ -2,11 +2,9 @@ import React, {Component} from 'react';
 
 class TaskItems extends Component{
     render(){
-        return(
+        return (
             <div>
-            Title of Task
-            <TaskList />
-            <button>Done/Delete</button>
+                Individual Tasks
             </div>
         )
     }

@@ -3,9 +3,11 @@ import TaskItems from './TaskItems';
 
 class TaskList extends Component{
     render(){
-        return(
+        return (
             <div>
-            Title of Task
+                Title of task
+                <TaskItems />
+                <button>Done/Delete</button>
             </div>
         )
     }
