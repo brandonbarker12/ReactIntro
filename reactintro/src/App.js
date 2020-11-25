@@ -7,7 +7,7 @@ class App extends Component {
     constructor(){
         super()
         this.state = {
-            todoList: ['item2', 'item 1'],
+            todoList: ['item 1', 'item 2'],
             task: ''
         }
     }
@@ -19,14 +19,14 @@ class App extends Component {
                     <input
                         type='text'
                         className='input'
-                        placeholder='Enter Todo Item'
+                        placeholder='Enter To-do Item'
                         value={this.state.task}
                         onChange={(e) => this.setState({task: e.target.value})}
                     />
-                    <button type='submit'>Add Todo</button>
+                    <button type='submit'>Add To List</button>
                 </form>
-                <TaskList title={'Pending Todo'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
-                <TaskList title={'Completed'} buttonText={"Delete"} tasks={['done']} buttonFunction={this.deleteTodo} />
+                <TaskList title={'Pending Tasks'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
+                <TaskList title={'Completed'} buttonText={"Delete"} tasks={['Done']} buttonFunction={this.deleteTodo} />
             </div>
         );
     }
