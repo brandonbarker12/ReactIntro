@@ -1,5 +1,4 @@
 import React, { Component }  from 'react';
-import logo from './logo.svg';
 import './App.css';
 import TaskList from './TaskList';
 
@@ -19,14 +18,14 @@ class App extends Component {
                     <input
                         type='text'
                         className='input'
-                        placeholder='Enter To-do Item'
+                        placeholder='Enter A New Task'
                         value={this.state.task}
                         onChange={(e) => this.setState({task: e.target.value})}
                     />
                     <button type='submit'>Add To List</button>
                 </form>
-                <TaskList title={'Pending Tasks'} buttonText={'Done'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
-                <TaskList title={'Completed'} buttonText={"Delete"} tasks={['Done']} buttonFunction={this.deleteTodo} />
+                <TaskList title={'Pending Tasks'} tasks={this.state.todoList} buttonFunction={this.removeTodo} />
+                <TaskList title={'Completed'} tasks={['Done']} buttonFunction={this.deleteTodo} />
             </div>
         );
     }
