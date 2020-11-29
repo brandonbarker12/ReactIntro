@@ -1,0 +1,53 @@
+@font-face {font-family: 'cmpfire'; 
+src: url('Campfire.ttf')format('truetype');}
+
+.App {
+  text-align: center;
+  line-height: 1.5em;
+}
+body {
+    background-image: url("camping_background.jpg");
+    background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    color: white;
+    margin-top: 20px;
+}
+
+h1 {
+    color: black;
+    text-shadow: -1px 0px 3px white;
+    font-size: 3.5em;
+    font-family: "cmpfire";
+	letter-spacing: 1.5px;
+    padding-top: 10px;
+}
+
+.input {
+    font-family: "cmpfire";
+    font-size: 1em;
+    color: white;
+    letter-spacing: 1px;
+    background: transparent;
+    text-shadow: -1px 0px 3px black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    font-family: "cmpfire";
+    font-size: 1em;
+    position: relative;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+    background: transparent;
+    text-shadow: -1px 0px 3px black;
+}
+
+#tasks {
+    color: black;
+}
