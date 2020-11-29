@@ -32,7 +32,9 @@ class App extends Component {
     addTodo(e){
         e.preventDefault();
         this.setState({task: '', todoList: [ ...this.state.todoList, this.state.task] });
+        this.setState({ text: ''});
     }
+
     removeTodo = key =>{
         let todoList = this.state.todoList;
         let index = todoList.indexOf(key);
